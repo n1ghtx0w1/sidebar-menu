@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    transition: width 0.3s ease;
+  }
+
+  .sidebar-collapsed {
+    width: 50px; /* Define the collapsed width */
+  }
+
+  .sidebar-collapsed .content {
+    margin-left: 50px; /* Adjust the margin to accommodate the collapsed sidebar */
+  }
+  
+  .logo {
+    background-color: #222;
+    padding: 20px;
+  }
+  
+  .logo h2 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    border-bottom: 1px solid #555;
+  }
+  
+  .menu-item a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-item a i {
+    margin-right: 10px;
+  }
+
+  .menu-item .menu-icon {
+    width: 12px;
+    height: 12px;
+    fill: #fff;
+    margin-left: auto;
+  }
+  
+  .menu-item a:hover {
+    background-color: #222;
+  }
+  
+  .submenu {
+    margin-right: 8px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  .submenu.show {
+    display: block;
+  }
+
+  .submenu li {
+    font-size: 14px; /* Adjust the value as needed */
+    padding-left: 24px; /* Adjust the value as needed */
+  }
+  
+  .submenu li a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .submenu li a i {
+    margin-right: 8px; /* Adjust the value as needed */
+    font-size: 12px; /* Adjust the value as needed */
+  }
+  
+  .profile {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+  }
+  
